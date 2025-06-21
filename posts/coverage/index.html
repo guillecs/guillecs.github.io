@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Automation Coverage Is Not Quality - The Crucial Distinction | Guillermo Cano</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<!--[if lte IE 8]><script src="/assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="/assets/css/main.css" />
+	<!--[if lte IE 9]><link rel="stylesheet" href="/assets/css/ie9.css" /><![endif]-->
+	<!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie8.css" /><![endif]-->
+</head>
+
+
+<body>
+
+    <!-- Wrapper -->
+<div id="wrapper">
+
+<!-- Header -->
+<header id="header">
+	<a href="https://guillecs.github.io//" class="logo"><strong>Guillermo Cano</strong> <span>Quality Engineering Manager</span></a>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+	<ul class="links">
+        
+		    
+		
+		    
+		
+		    
+		
+		    
+		        <li><a href="https://guillecs.github.io//">Home</a></li>
+	    	
+		
+		    
+		
+		    
+		
+		    
+		
+		
+		    
+		
+		    
+		        <li><a href="https://guillecs.github.io/about-me/">About Me - Guillermo Cano</a></li>
+		    
+		
+		    
+		        <li><a href="https://guillecs.github.io/cv/">My Curriculum Vitae</a></li>
+		    
+		
+		    
+		
+		    
+		
+		    
+		
+	</ul>
+	<ul class="actions vertical">
+		<li><a href="#" class="button special fit">Get Started</a></li>
+		<li><a href="#" class="button fit">Log In</a></li>
+	</ul>
+</nav>
+ 
+    
+    
+<!-- Main -->
+<div id="main" class="alt">
+
+<!-- One -->
+<section id="one">
+	<div class="inner">
+		<header class="major">
+			<h1>Automation Coverage Is Not Quality - The Crucial Distinction</h1>
+		</header>
+		
+		<p>This post delves into a common misconception in software development: equating high automation coverage with high product quality. While test automation is a powerful tool, it’s essential to understand its limitations and how to truly measure quality.</p>
+
+<hr />
+
+<h3 id="the-allure-of-high-coverage">The Allure of High Coverage</h3>
+
+<p>In many organizations, achieving a high percentage of automated test coverage (e.g., 80% or 90%) becomes a primary metric for success in quality assurance. On the surface, this makes sense: more tests running automatically should mean fewer bugs, right? Not necessarily. The problem arises when coverage becomes the <em>goal</em> rather than a <em>means</em> to an end.</p>
+
+<h3 id="why-automation-coverage--quality">Why Automation Coverage ≠ Quality</h3>
+
+<p>Here’s why relying solely on automation coverage as a quality metric can be misleading:</p>
+
+<ol>
+  <li><strong>“Bad” Tests Lead to “Bad” Coverage:</strong> If your automated tests are poorly designed, test the wrong things, or are brittle and frequently fail for non-bug reasons (false positives), then high coverage means you’re efficiently running ineffective tests.</li>
+  <li><strong>Missing Critical Paths:</strong> Coverage metrics often focus on code lines or branches executed, not on critical business flows or user scenarios. You might have 90% code coverage, but if the remaining 10% contains the most vital user journeys or high-risk areas, your product is still vulnerable.</li>
+  <li><strong>Ignoring Non-Functional Aspects:</strong> Automation coverage typically doesn’t account for critical non-functional requirements like usability, accessibility, security vulnerabilities (beyond basic checks), performance under specific loads, or the overall user experience. These aspects require different testing approaches.</li>
+  <li><strong>No Substitute for Human Intuition:</strong> Automated tests can’t replicate the human ability to explore, to question, to find the unexpected. They don’t get “frustrated” like a user or notice subtle visual glitches. Exploratory testing and human review remain vital.</li>
+  <li><strong>Focus on Quantity Over Quality of Tests:</strong> Chasing a coverage percentage can incentivize teams to write many simple, low-value tests just to boost the number, rather than focusing on fewer, highly impactful, and complex tests that uncover deeper issues.</li>
+</ol>
+
+<hr />
+
+<h3 id="what-does-quality-truly-mean-then">What Does Quality Truly Mean, Then?</h3>
+
+<p>True software quality is a multifaceted concept that encompasses:</p>
+
+<ul>
+  <li><strong>User Satisfaction:</strong> Does the product meet and exceed user expectations? Is it delightful to use?</li>
+  <li><strong>Reliability:</strong> Does it perform its intended functions consistently and without failure?</li>
+  <li><strong>Performance:</strong> Is it fast and responsive under various conditions?</li>
+  <li><strong>Security:</strong> Is it protected against threats and vulnerabilities?</li>
+  <li><strong>Maintainability:</strong> Is the code clean, well-documented, and easy to modify?</li>
+  <li><strong>Usability &amp; Accessibility:</strong> Is it easy for <em>all</em> users to learn, operate, and derive value from?</li>
+  <li><strong>Risk Mitigation:</strong> Are the most critical and high-impact risks adequately addressed?</li>
+</ul>
+
+<hr />
+
+<h3 id="a-holistic-approach-to-quality">A Holistic Approach to Quality</h3>
+
+<p>Instead of merely chasing automation coverage, Quality Engineering should adopt a holistic approach:</p>
+
+<ul>
+  <li><strong>Risk-Based Testing:</strong> Prioritize testing efforts based on the potential impact and likelihood of failure. Automate what makes sense, test manually where human insight is critical.</li>
+  <li><strong>Shift-Left Quality:</strong> Embed quality activities throughout the entire SDLC, from requirements gathering to deployment.</li>
+  <li><strong>Diverse Testing Strategies:</strong> Combine automated unit, integration, and UI tests with robust manual exploratory testing, usability testing, security testing, and performance testing.</li>
+  <li><strong>Meaningful Metrics:</strong> Focus on metrics that truly reflect product quality and customer satisfaction, such as defect leakage, customer-reported bugs, mean time to recovery, and user feedback.</li>
+  <li><strong>Cross-Functional Collaboration:</strong> Ensure that quality is a shared responsibility across product, development, and QE teams.</li>
+</ul>
+
+<hr />
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>Automation coverage is a valuable metric for the efficiency of our test suites, but it is not, and never will be, a direct measure of product quality. True quality stems from a strategic, multi-layered approach that prioritizes user experience, mitigates real risks, and involves collaborative effort from every stage of development. Let’s build quality in, not just test it at the end.</p>
+
+<hr />
+
+	</div>
+</section>
+
+</div>
+
+    <footer id="footer">
+    <div class="inner">
+        <ul class="copyright">
+            <li>&copy; 2025 Guillermo Cano.</li>
+        </ul>
+    </div>
+</footer>
+
+</body>
+
+</html>
