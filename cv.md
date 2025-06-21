@@ -17,7 +17,7 @@ nav-menu: true # Keep nav menu if the landing layout requires it
             </header>
             <p>I am a Quality Engineering Manager with a deep passion for software excellence, strategic automation, AI implementation in QE, and developing high-performing teams. Here you can find a summary of my skills and experience. For a comprehensive overview of my professional career, including details about my experience, academic background, and specific projects, I invite you to download my complete CV in PDF format.</p>
             <ul class="actions">
-                <li><a href="{{ site.baseurl }}/assets/cv/guillermoCanoCV.pdf" class="button next">Download CV in PDF</a></li>
+                <li><a href="{{ site.baseurl }}/assets/cv/GuillermoCanoCV.pdf" class="button next">Download CV in PDF</a></li>
             </ul>
             <p class="small-text"><i>Last CV update: {{ page.date | date: "%d/%m/%Y" }}</i></p>
         </div>
