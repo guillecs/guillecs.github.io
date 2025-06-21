@@ -1,0 +1,35 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # ¡CORREGIDO! Ahora se activa con la rama 'main'
+
+jobs:
+  github-pages:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Permiso necesario para que la acción pueda escribir en la rama gh-pages
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      # Configura Ruby para que Bundler y Jekyll puedan ejecutarse correctamente
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2' # Asegúrate de que esta versión coincida con los requisitos de tus gemas
+          bundler-cache: true # Esto instalará automáticamente tus gemas
+
+      # Construye el sitio Jekyll
+      - name: Build Jekyll Site
+        run: bundle exec jekyll build # Ejecutamos el comando de Jekyll directamente
+
+      # Despliega el sitio a GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3 # Acción de despliegue
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site # Le dice dónde está el sitio construido
+          publish_branch: gh-pages # Le dice a qué rama subir el sitio

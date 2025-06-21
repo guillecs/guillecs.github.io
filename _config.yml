@@ -1,0 +1,69 @@
+# site settings
+title: Mi Portfolio Creativo # Título actualizado
+subtitle: Guillermo - Creativo Digital # Subtítulo más personal
+email: tu-email@ejemplo.com # Tu email, actualizado
+description: >- # Descripción actualizada
+  Un portfolio digital que muestra mi trabajo en diseño, comunicación,
+  proyectos creativos y reflexiones.
+#baseurl: "/plantilla-portfolio" # La subcarpeta donde se desplegará tu sitio en GitHub Pages
+url: "https://guillecs.github.io" # La URL base de tu sitio. ¡Asegúrate de que esta sea tu URL de GitHub Pages!
+author:
+  name: Guillermo # Tu nombre
+  # Puedes añadir más detalles de autor si quieres
+  # street_address: 1234 Somewhere Road # Puedes eliminar o personalizar estos detalles
+  # city: Nashville
+  # state: TN
+  # zip_code: 55555
+  # country: United States of America
+  # phone: (716) 555-5555
+
+# homepage tiles
+tiles-source: pages # Los tiles de la página principal (los 'cuadritos') buscarán páginas
+tiles-count: 6 # Ahora queremos 4 cuadritos en la página principal
+
+# Definición de cada tile para tu portfolio
+tiles:
+  - title: Sobre Mí # ¡Este es el nuevo tile que va primero!
+    subtitle: Mi Experiencia y Pasiones
+    image: assets/images/pic07.jpg # La imagen que uses para tu página Sobre Mí
+    url: /sobre-mi/ # La URL a la que enlazará este tile
+  - title: Proyectos
+    subtitle: Mis trabajos integrales y estudios de caso
+    image: assets/images/pic01.jpg
+    url: /proyectos/
+  - title: Posts # Cambié "Artículos" a "Posts" para ser consistente
+    subtitle: Mis escritos, análisis y reflexiones
+    image: assets/images/pic02.jpg
+    url: /posts/ # Asegúrate de que esta URL apunta a tu nueva página de posts
+  - title: Mi CV
+    subtitle: Mi experiencia profesional y habilidades
+    image: assets/images/pic04.jpg
+    url: /cv/
+
+# Colecciones personalizadas
+collections:
+  projects: # Este será el nombre de tu colección (puedes llamarla como quieras, 'projects' es común)
+    output: true # Esto le dice a Jekyll que genere una página HTML para cada proyecto individual
+    permalink: /proyectos/:path/ # Define la estructura de URL para cada proyecto (ej: /proyectos/mi-primer-proyecto/)
+
+# social settings (key must match name of font awesome icon)
+# see https://fontawesome.com/icons?d=gallery&p=2&s=brands
+# Icons are not shown if value is empty
+# You need to restart jekyll for changes to have an effect
+socials:
+  GitHub: https://github.com/guillecs # Enlace a tu GitHub
+  # Instagram: # Puedes añadir tu Instagram aquí
+  # LinkedIn: # Puedes añadir tu LinkedIn aquí
+  # BlueSky: # Puedes añadir tu BlueSky aquí
+
+# build settings
+markdown: kramdown # Procesador de Markdown
+
+sass:
+  style: compressed # Comprime el CSS para optimizar el tamaño
+
+exclude:
+  - "*.gemspec"
+  - LICENSE.md
+  - CONTRIBUTING.md
+  - README.md
