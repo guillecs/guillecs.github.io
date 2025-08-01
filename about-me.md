@@ -13,7 +13,7 @@ description: My role as a Quality Engineering Manager isn't just about detecting
 <div id="main">
 <section id="two" class="spotlights">
     <section>
-        <a href="{{ '/proyectos/' | relative_url }}" class="image">
+        <a href="{{ '/acomplishments/' | relative_url }}" class="image">
             <img src="{{ site.baseurl }}/assets/images/pic23.jpg" alt="Image representing various projects" data-position="center center" />
         </a>
         <div class="content">
@@ -23,7 +23,7 @@ description: My role as a Quality Engineering Manager isn't just about detecting
                 </header>
                 <p>Explore my recent work and key accomplishments in quality engineering. From Softevolution (2013-2015) to Unit4 (2015-2022) and Celonis (2022 - Present), I've led teams to significant impact: achieving over 90% regression coverage, reducing customer issues by 80%, and generating $40K in annual savings through process optimization.</p>
                 <ul class="actions">
-                    <li><a href="{{ '/proyectos/' | relative_url }}" class="button">View Projects</a></li>
+                    <li><a href="{{ '/acomplishments/' | relative_url }}" class="button">View Projects</a></li>
                 </ul>
             </div>
         </div>
